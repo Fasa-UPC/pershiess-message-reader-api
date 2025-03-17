@@ -5,4 +5,6 @@ const route = express.Router();
 
 route.get("/", MessagesController.getAllMessages);
 
+route.get("/:id", MessagesController.getMessageById);
+
 module.exports = route;
